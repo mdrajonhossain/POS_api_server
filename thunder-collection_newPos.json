@@ -1,0 +1,626 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "newPos",
+    "collectionId": "fc839145-6826-491f-b914-f07fe2fe6608",
+    "dateExported": "2024-07-15T20:54:16.431Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "21a78d4f-5152-4fd8-b98c-45b23ce6d03f",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "1. login",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/userLogin",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-09T16:50:13.933Z",
+            "modified": "2024-07-14T20:38:45.854Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"sumon.doe@example.com\",\n  \"password\": \"a123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "da276821-66f1-4e70-a495-c585a099df38",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "2. registration",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/userRegister",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-09T17:05:43.276Z",
+            "modified": "2024-07-14T20:38:32.476Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"sumon\",\n  \"email\": \"sumon.doe@example.com\",\n  \"password\": \"a123456789\",\n  \"password_confirmation\": \"a123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5395ff95-b7e7-4e5e-a0e4-135e60b8da9d",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "check_user",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/userCheck",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-09T19:38:31.858Z",
+            "modified": "2024-07-14T20:38:50.163Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "oNl6zLbJ4VIxyhwC4vzIxossjBb5LfXgnNbivrUP"
+            }
+        },
+        {
+            "_id": "7b3e1c48-b5d1-43d2-8db8-51862a3193f3",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "3. get_catagory",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_categories",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-07-13T19:34:16.173Z",
+            "modified": "2024-07-15T20:21:42.778Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "9625a750-1a3b-4da5-bf75-99f18f24bf22",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "4. add_catagory",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_category",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-07-13T20:24:00.202Z",
+            "modified": "2024-07-15T20:21:49.024Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"category_name\": \"booksss\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "d4831ade-925b-499c-9398-8e6c995ff2ca",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "5. get_product",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_product",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-07-13T20:52:45.082Z",
+            "modified": "2024-07-15T20:22:00.515Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "4e266cd1-ee1b-43f8-882b-80e809534599",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "6. add_product",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_product",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-07-13T21:03:10.840Z",
+            "modified": "2024-07-15T20:22:06.963Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"category_id\": 1,\n  \"name\": \"Samsung S10\",\n  \"brand_id\": 1,\n  \"purchase_price\": 20,\n  \"selling_price\": 25,\n  \"discount\": 0,\n  \"stock\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "21de7d86-c9b4-486d-8691-1f499cbb3393",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "get_brand",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_brand",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-07-13T21:39:16.583Z",
+            "modified": "2024-07-15T20:22:12.938Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "b532f02b-35f4-4cdd-adcb-de19493bac00",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "add_brand",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_brand",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-07-13T21:42:53.812Z",
+            "modified": "2024-07-15T20:22:19.128Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"brand_name\": \"bds\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "0b05609f-9400-4e00-b1a1-e2d9d39ce946",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "7. get_customer",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_customer",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-07-13T22:50:46.739Z",
+            "modified": "2024-07-15T20:22:34.450Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "828ed359-788a-4040-9a98-9b21c6f5a5e4",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "8. add_customer",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/addcustomer",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-07-13T22:52:36.233Z",
+            "modified": "2024-07-15T20:22:38.756Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"customer_name\" : \"name\",\n  \"customer_code\" : \"512546\",\n  \"address\" : \"sdf\",\n  \"phone\" : \"02145\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "7456888e-8899-4bf3-9a45-5ce478ec89c5",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "9. get_supplier",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_supplier",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-07-13T23:19:21.354Z",
+            "modified": "2024-07-15T20:22:46.188Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "5982da44-ec9e-45b1-933b-9bd89b8044d6",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "10. add_supplier",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/addsupplier",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-07-13T23:23:27.784Z",
+            "modified": "2024-07-15T20:23:07.655Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nama\": \"rajon\",\n  \"address\": \"dhaka\",\n  \"phone\": \"01755\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "5aea13a3-71b9-44ec-a1f4-917d31ee6f97",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "11. get_expenses",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_expenses",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-07-14T00:05:55.111Z",
+            "modified": "2024-07-15T20:23:13.238Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "1a3ef63a-ae41-4e48-9f70-14ad00bce6e3",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "12. add_expenses",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_expenses",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-07-14T00:07:36.935Z",
+            "modified": "2024-07-15T20:23:18.672Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"sadfsadf\",\n  \"amount\": 10\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "830f8293-0da0-4ee8-a172-cd31106835a9",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "13. get_purchase",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_purchase",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-07-14T04:46:47.531Z",
+            "modified": "2024-07-15T20:23:25.432Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "c258c99d-484c-4804-b819-a8c71ca3d913",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "15. add_purchase",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_purchase",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2024-07-14T06:14:35.885Z",
+            "modified": "2024-07-15T20:23:40.978Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"supplier\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "e9865b0f-2e8c-4eaf-b8d6-cd3c4bf2038f",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "14. get_supplier",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_supplier",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2024-07-14T17:14:17.158Z",
+            "modified": "2024-07-15T20:23:46.908Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "13842ced-0318-4fd6-b099-58a2f9b8f1d0",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "17. purchase in  get product select",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/purchase_in_product_select",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2024-07-14T17:26:50.309Z",
+            "modified": "2024-07-15T20:23:52.999Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "a52d75bd-673e-4158-bb7e-4e143b9e6ecb",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "16. purchaseDetails_in_items_list for According to Id",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/purchaseDetails_in_items_list",
+            "method": "POST",
+            "sortNum": 220000,
+            "created": "2024-07-14T17:43:03.780Z",
+            "modified": "2024-07-15T20:24:05.419Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"purchase_id\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "52109029-06f1-461a-a317-6d3d069d8ebc",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "18. add_purchaseDetails_in_items_list",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_purchaseDetails_in_items_list",
+            "method": "POST",
+            "sortNum": 230000,
+            "created": "2024-07-14T18:04:40.165Z",
+            "modified": "2024-07-15T20:24:17.971Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"purchase_id\": 1,\n  \"product_id\": 1,\n  \"purchase_price\": 20,\n  \"quantity\": 1,\n  \"sub_total\": 20\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "93c23b53-424a-4ed0-8a20-c4db150c7e94",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "19. purchase_Details_in_items delete",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/purchaseDetails_in_items_delete",
+            "method": "POST",
+            "sortNum": 250000,
+            "created": "2024-07-14T21:28:07.264Z",
+            "modified": "2024-07-15T20:24:28.566Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "1d4b1282-fa99-4e14-ab5f-8c028a81387e",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "20. purchase_Details_in_items quantity edit",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/purchaseDetails_in_items_edit",
+            "method": "POST",
+            "sortNum": 260000,
+            "created": "2024-07-14T21:57:34.064Z",
+            "modified": "2024-07-15T20:24:40.958Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 1,\n  \"quantity\": 200\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "4d178317-54f5-4950-a0ce-49d324ec6106",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "21. final save Purchase table save items",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/purchase_in_items_save",
+            "method": "POST",
+            "sortNum": 270000,
+            "created": "2024-07-14T22:43:19.684Z",
+            "modified": "2024-07-15T20:27:57.043Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"purchase_id\": 3,\n  \"discount\": 5,\n  \"pay\": 4000\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "12e048e2-4db3-46b7-bc8f-f6938d974464",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "log_out",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/logout",
+            "method": "POST",
+            "sortNum": 280000,
+            "created": "2024-07-14T23:47:44.262Z",
+            "modified": "2024-07-15T00:09:38.883Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": " "
+            }
+        },
+        {
+            "_id": "aed81a39-16c7-4173-8209-439bbf4b9a46",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "22. add sales",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_sales",
+            "method": "POST",
+            "sortNum": 290000,
+            "created": "2024-07-15T17:26:51.761Z",
+            "modified": "2024-07-15T20:29:13.438Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "a25dde65-8825-4e08-a8bf-99de53ce1cfe",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "23. Sales in get product select",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_product",
+            "method": "GET",
+            "sortNum": 300000,
+            "created": "2024-07-15T18:01:22.672Z",
+            "modified": "2024-07-15T20:28:08.507Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "44d71709-01c6-41df-83f4-7c88feb9f484",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "24. get Sales List",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/get_sales",
+            "method": "POST",
+            "sortNum": 310000,
+            "created": "2024-07-15T18:08:00.400Z",
+            "modified": "2024-07-15T20:28:15.330Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "a1e42ccf-b58c-4f8e-a7cf-30f2ccc9e777",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "25. add_sales_in_items",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_sales_in_items",
+            "method": "POST",
+            "sortNum": 320000,
+            "created": "2024-07-15T18:30:29.238Z",
+            "modified": "2024-07-15T20:28:29.268Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"sales_id\": 1,\n  \"product_id\": 1,\n  \"sales_price\": 20,\n  \"quantity\": 2,\n  \"discount\": 0,\n  \"sub_total\": 20\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "d694d0e0-222c-463c-b7ab-eaf9a41c59a7",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "26. sales_details_in_items delete",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_sales_in_items_delete",
+            "method": "POST",
+            "sortNum": 330000,
+            "created": "2024-07-15T18:48:31.605Z",
+            "modified": "2024-07-15T18:53:28.185Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 6\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "SjsFiR4W7qh0dFMThAl1R6FMYKl1wfOebzRdnhvO"
+            }
+        },
+        {
+            "_id": "e9919772-a79e-4f55-ae99-3220fd8b665d",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "27. Sales_details in_items_edit",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/add_sales_in_items_edit",
+            "method": "POST",
+            "sortNum": 340000,
+            "created": "2024-07-15T18:55:45.964Z",
+            "modified": "2024-07-15T19:00:00.394Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 7,\n  \"quantity\": 10\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "SjsFiR4W7qh0dFMThAl1R6FMYKl1wfOebzRdnhvO"
+            }
+        },
+        {
+            "_id": "4940d105-2267-47d3-824d-1c763db079d0",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "28. final save Sales table save items",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/final_sales_in_items_save",
+            "method": "POST",
+            "sortNum": 350000,
+            "created": "2024-07-15T19:05:42.388Z",
+            "modified": "2024-07-15T20:28:40.689Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"sales_id\": 1,\n  \"customer\": 2,\n  \"received\": 400\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "aE4GKFtejEIzTsGN7ZAPze3MT83Q4BezDgCmBfml"
+            }
+        },
+        {
+            "_id": "a2717961-7263-4f5f-bc5f-9797e9f958fe",
+            "colId": "fc839145-6826-491f-b914-f07fe2fe6608",
+            "containerId": "",
+            "name": "29. get_salesDetails with product",
+            "url": "http://172.16.2.173/rajon_pos/POS/api/getsales_details",
+            "method": "POST",
+            "sortNum": 360000,
+            "created": "2024-07-15T20:35:49.981Z",
+            "modified": "2024-07-15T20:49:49.940Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"sales_id\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "QeXzD0zq63JZI11nzrmp4pK9a0n4sCWSo8C67ajV"
+            }
+        }
+    ],
+    "ref": "NT270PHCB6TdkqL1TWeDyyvoq72ocdXQ6D14wopO5T8_lWZlmmzG8qgzL5ZSA4vQx3PACDGJXKbe8WY9seIruw"
+}
